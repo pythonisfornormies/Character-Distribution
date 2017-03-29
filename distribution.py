@@ -2,6 +2,7 @@
 distribution.py
 Author: Kai Darrow
 Credit: http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
+http://stackoverflow.com/questions/265960/best-way-to-strip-punctuation-from-a-string-in-python
 
 Assignment:
 
@@ -36,6 +37,7 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-
+import string
 a = input("Please enter a string of text (the bigger the better): ")
-aa = s.lower(a)
+aa = a.lower()
+aaa = 
