@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Kai Darrow
+Credit: http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
 
 Assignment:
 
@@ -37,31 +37,5 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 
-input = input("Please enter a string of text (the bigger the better): ")
-
-a = input.count("a")
-b = input.count("b")
-c = input.count("c")
-d = input.count("d")
-e = input.count("e")
-f = input.count("f")
-g = input.count("g")
-h = input.count("h")
-i = input.count("i")
-j = input.count("j")
-k = input.count("k")
-l = input.count("l")
-m = input.count("m")
-n = input.count("n")
-o = input.count("o")
-p = input.count("p")
-q = input.count("q")
-r = input.count("r")
-s = input.count("s")
-t = input.count("t")
-u = input.count("u")
-v = input.count("v")
-w = input.count("w")
-x = input.count("x")
-y = input.count("y")
-z = input.count("z")
+a = input("Please enter a string of text (the bigger the better): ")
+aa = s.lower(a)
