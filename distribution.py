@@ -3,6 +3,7 @@ distribution.py
 Author: Kai Darrow
 Credit: http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
 http://stackoverflow.com/questions/265960/best-way-to-strip-punctuation-from-a-string-in-python
+http://stackoverflow.com/questions/1155617/count-occurrence-of-a-character-in-a-string
 
 Assignment:
 
@@ -38,6 +39,10 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 import string
+from collections import Counter
+
 a = input("Please enter a string of text (the bigger the better): ")
 aa = a.lower()
-aaa = 
+counter = Counter(aa)
+aaa = str(counter['a']) * 'a' 
+print(aaa)
