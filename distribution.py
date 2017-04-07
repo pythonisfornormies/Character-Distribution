@@ -44,5 +44,32 @@ from collections import Counter
 a = input("Please enter a string of text (the bigger the better): ")
 aa = a.lower()
 counter = Counter(aa)
-aaa = str(counter['a']) * 'a' 
-print(aaa)
+
+print(counter)
+
+def compare(a, b):
+    """
+    compare - generic comparison function for testing two elements.
+    """
+    return b > a
+
+
+def bsort(seq, cmp):
+    """
+    bsort - simple sorting algorithm that uses any comparison function
+    seq - a list to be sorted
+    cmp - a function for comparing two elements of seq
+    """
+    sorted = False  # assume the seq is not sorted to start with
+    while not sorted:
+        sorted = True   # assume it's already sorted correctly
+        for index, value in enumerate(seq): # for every element in seq
+            if index > 0:                   # past the first..
+                if not cmp(seq[index-1], value):  # if this element is out of order
+                    sorted = False          # then the list is not sorted yet
+                    seq[index-1], seq[index] = seq[index], seq[index-1] # and swap it
+
+    
+tosort = ['c', 'g', 'z', 't', 'f']
+bsort(tosort, compare)
+print(tosort)
