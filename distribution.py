@@ -4,6 +4,7 @@ Author: Kai Darrow
 Credit: http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
 http://stackoverflow.com/questions/265960/best-way-to-strip-punctuation-from-a-string-in-python
 http://stackoverflow.com/questions/1155617/count-occurrence-of-a-character-in-a-string
+http://stackoverflow.com/questions/20196159/how-to-append-multiple-values-to-a-list-in-python
 
 Assignment:
 
@@ -38,13 +39,46 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-a = input("word: ")
-aa = a.lower()
+fafa = input("word: ")
+aa = fafa.lower()
 aaa = aa.replace(" ","")
 aaaa = (" ".join(aaa))
 aaaaa = aaaa.split()
 aaaaaa = aaaaa.sort()
+print(aaaaaa)
+mfe = aaaaaa
+a = mfe.count('a')
+list.append(a, 1)
+b = mfe.count('b')
+list.append(b, 2)
+c = mfe.count('c')
+list.append(c, 3)
+d = mfe.count('d')
+e = mfe.count('e')
+f = mfe.count('f')
+g = mfe.count('g')
+h = mfe.count('h')
+i = mfe.count('i')
+j = mfe.count('j')
+k = mfe.count('k')
+l = mfe.count('l')
+m = mfe.count('m')
+n = mfe.count('n')
+o = mfe.count('o')
+p = mfe.count('p')
+q = mfe.count('q')
+r = mfe.count('r')
+s = mfe.count('s')
+t = mfe.count('t')
+u = mfe.count('u')
+v = mfe.count('v')
+w = mfe.count('w')
+x = mfe.count('x')
+y = mfe.count('y')
+z = mfe.count('z')
+print(a)
 
-for m in aaaaaa:
+"""
+for m in final:
     print(m)
-
+"""
