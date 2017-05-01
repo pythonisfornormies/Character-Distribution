@@ -45,7 +45,6 @@ aaa = aa.replace(" ","")
 aaaa = (" ".join(aaa))
 aaaaa = aaaa.split()
 aaaaaa = aaaaa.sort()
-print(aaaaaa)
 mfe = aaaaaa
 a = mfe.count('a')
 b = mfe.count('b')
@@ -74,10 +73,10 @@ x = mfe.count('x')
 y = mfe.count('y')
 z = mfe.count('z')
 listnumber = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, x, y, z]
-print(listnumber)
 listletter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 listfinal = zip(listnumber, listletter)
-print(listfinal)
+lim = list(listfinal)
+print(lim)
 """
 for m in final:
     print(m)
