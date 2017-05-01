@@ -39,8 +39,8 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-fafa = input("word: ")
-aa = fafa.lower()
+am = input("word: ")
+aa = am.lower()
 aaa = aa.replace(" ","")
 aaaa = (" ".join(aaa))
 aaaaa = aaaa.split()
@@ -48,11 +48,8 @@ aaaaaa = aaaaa.sort()
 print(aaaaaa)
 mfe = aaaaaa
 a = mfe.count('a')
-list.append(a, 1)
 b = mfe.count('b')
-list.append(b, 2)
 c = mfe.count('c')
-list.append(c, 3)
 d = mfe.count('d')
 e = mfe.count('e')
 f = mfe.count('f')
@@ -76,8 +73,11 @@ w = mfe.count('w')
 x = mfe.count('x')
 y = mfe.count('y')
 z = mfe.count('z')
-print(a)
-
+listnumber = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, x, y, z]
+print(listnumber)
+listletter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+listfinal = zip(listnumber, listletter)
+print(listfinal)
 """
 for m in final:
     print(m)
