@@ -40,7 +40,7 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 am = input("Please enter a string of text (the bigger the better): ")
-aa = am.lower()
+aa = am.lower() 
 aaa = aa.replace(" ","")
 aaaa = (" ".join(aaa))
 aaaaa = aaaa.split()
