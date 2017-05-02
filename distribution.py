@@ -39,7 +39,7 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-am = input("word: ")
+am = input("Please enter a string of text (the bigger the better): ")
 aa = am.lower()
 aaa = aa.replace(" ","")
 aaaa = (" ".join(aaa))
@@ -72,12 +72,33 @@ w = mfe.count('w')
 x = mfe.count('x')
 y = mfe.count('y')
 z = mfe.count('z')
-listnumber = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, x, y, z]
+listnumber = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z]
 listletter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-listfinal = zip(listnumber, listletter)
-lim = list(listfinal)
-print(lim)
+listtogo = zip(listnumber, listletter)
+lim = list(listtogo)
 """
-for m in final:
-    print(m)
 """
+def compare(one, two):
+    return two > one
+
+def bsort(seq, cmp):
+    sorted = False  
+    while not sorted:
+        sorted = True 
+        for index, value in enumerate(seq): 
+            if index > 0:                
+                if not cmp(seq[index-1], value):  
+                    sorted = False        
+                    seq[index-1], seq[index] = seq[index], seq[index-1] 
+
+    
+listff = lim
+bsort(listff, compare)
+listnumbersecondzip, listlettersecondzip = zip(*listff)
+listforherezip = zip(listlettersecondzip, listnumbersecondzip)
+listforhere = list(listforherezip)
+mean = [faf * gaf for faf, gaf in listforhere]
+meanlist = list(mean)
+print('The distribution of characters in "'+am+'" is: ')
+for melon in reversed(meanlist):
+    print(melon)
