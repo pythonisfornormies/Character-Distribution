@@ -98,6 +98,10 @@ listforherezip = zip(listlettersecondzip, listnumbersecondzip)
 listforhere = list(listforherezip)
 mean = [faf * gaf for faf, gaf in listforhere]
 meanlist = list(mean)
+meantwotwo = [afa * maf for afa, maf in listff]
 print('The distribution of characters in "'+am+'" is: ')
 for juoksentelisinkohan in reversed(meanlist):
     print(juoksentelisinkohan)
+for juoksen in meantwotwo:
+    print(juoksen)
+    print(juoksen)
