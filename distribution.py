@@ -93,6 +93,7 @@ def bsort(seq, cmp):
     
 listff = lim
 bsort(listff, compare)
+print('The distribution of characters in "'+am+'" is:')
 for memes, elmemes in listff:
     if elmemes > 1:
         memesmemes = elmemes * memes
