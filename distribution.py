@@ -73,7 +73,7 @@ y = mfe.count('y')
 z = mfe.count('z')
 listnumber = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z]
 listletter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-listtogo = zip(listnumber, listletter)
+listtogo = zip(listletter, listnumber)
 lim = list(listtogo)
 """
 """
@@ -93,15 +93,14 @@ def bsort(seq, cmp):
     
 listff = lim
 bsort(listff, compare)
-listnumbersecondzip, listlettersecondzip = zip(*listff)
-listforherezip = zip(listlettersecondzip, listnumbersecondzip)
-listforhere = list(listforherezip)
-mean = [faf * gaf for faf, gaf in listforhere]
-meanlist = list(mean)
-meantwotwo = [afa * maf for afa, maf in listff]
-print('The distribution of characters in "'+am+'" is: ')
-for juoksentelisinkohan in reversed(meanlist):
-    print(juoksentelisinkohan)
-for juoksen in meantwotwo:
-    print(juoksen)
-    print(juoksen)
+print(listff)
+
+for memes, elmemes in listff:
+    if elmemes > 1:
+        memesmemes = elmemes * memes
+        print(memesmemes)
+for memes, elmemes in listff:
+    if elmemes == 1:
+        pianobutter = elmemes* memes
+        print(pianobutter)
+   
