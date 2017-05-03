@@ -93,8 +93,6 @@ def bsort(seq, cmp):
     
 listff = lim
 bsort(listff, compare)
-print(listff)
-
 for memes, elmemes in listff:
     if elmemes > 1:
         memesmemes = elmemes * memes
