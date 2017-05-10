@@ -74,6 +74,8 @@ z = mfe.count('z')
 listnumber = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z]
 listletter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 listtogo = zip(listletter, listnumber)
+listtogonumbers = zip(listnumber, listletter)
+limun = list(listtogonumbers)
 lim = list(listtogo)
 """
 """
@@ -93,9 +95,10 @@ def bsort(seq, cmp):
     
 listff = lim
 bsort(listff, compare)
+bsort(limun, compare)
 print('The distribution of characters in "'+am+'" is: ')
-for memes, elmemes in listff:
-    if elmemes > 1:
+for memes, elmemes in reversed(limun):
+    if memes > 1:
         memesmemes = elmemes * memes
         print(memesmemes)
 for memes, elmemes in listff:
